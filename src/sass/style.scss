@@ -13,6 +13,50 @@ body {
 	font-family: sans-serif;
 }
 
+//NOT FOUND STYLES
+.not-found-page{
+	height: 500px;
+	.not-found-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	
+		h1 {
+			font-size: 36px;
+		}
+
+		.box-btn {
+			padding: 50px;
+		}
+
+		.not-found-btn {
+			padding: 10px;
+			font-size: 30px;
+			height: 100px;
+			width: 450px;
+			cursor: pointer;
+			border-radius:7px;
+			border: none;
+			background-color: #587d18;;
+			color: white;
+			transition: 0.3s;
+			text-decoration: none;
+		}
+		
+		.not-found-btn:hover {
+			background-color: #3e5a10;;
+			color: rgb(192, 192, 192);
+
+		}
+
+	}	
+}
+
+
+
 //DESKTOP-NAV
 nav {
 	position: fixed;
@@ -79,6 +123,49 @@ nav {
 	}
 }
 
+	// .nav-item,
+	// .nav-item::after,
+	// .nav-item::before {
+	// 	content: "";
+	// 	transition: transform 0.3s;
+	// }
+
+	// .one::after,
+	// .two::after,
+	// .three::after,
+	// .four::after,
+	// .five::after,
+	// .six::after,
+	// .seven::after {
+	// 	content: "";
+	// 	display: flex;
+	// 	left: 0;
+	// 	bottom: 0;
+	// 	height: 3px;
+	// 	width: 100%;
+	// 	background-color: #fff;
+	// 	transform: scaleX(0);
+	// 	transform-origin: right;
+	// }
+
+	// .one:hover::after,
+	// .two:hover::after,
+	// .three:hover::after,
+	// .four:hover::after,
+	// .five:hover::after,
+	// .six:hover::after,
+	// .seven:hover::after  {
+	// 	transform: scaleX(1);
+	// 	transform-origin: left;
+	// }
+
+	img {
+		margin-top: -70px;
+		height: 100px;
+		width: 200px;
+	}
+
+
 //SETTINGS OF BURGER-NAV
 .burger-nav {
 	display: none;
@@ -141,7 +228,14 @@ header {
 		font-size: 30px;
 	}
 
-	button {
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: #fff;
+		text-decoration: none;
+		font-size: 24px;
 		width: 230px;
 		height: 65px;
 		color: #fff;
@@ -150,16 +244,11 @@ header {
 		cursor: pointer;
 		border-radius: 35px;
 		text-align: center;
-		transition: background-color 0.3s;
-	}
-	button:hover {
-		background-color: #3d5710;
+		transition: 0.3s;
 	}
 
-	button a {
-		color: #fff;
-		text-decoration: none;
-		font-size: 24px;
+	a:hover {
+		background-color: #3d5710;
 	}
 
 	i {
@@ -198,6 +287,7 @@ header {
 }
 
 .text-style {
+	text-align: justify;
 	padding: 20px;
 }
 
@@ -266,6 +356,7 @@ header {
 
 .text-style-around {
 	padding: 30px;
+	text-align: justify;
 	font-size: 25px;
 	width: 700px;
 }
@@ -283,6 +374,7 @@ header {
 
 .objects {
 	padding: 20px 30px;
+	text-align: justify;
 
 	ul {
 		padding: 10px 20px;
@@ -508,6 +600,7 @@ header {
 		justify-content: center;
 		align-items: start;
 		justify-content: space-between;
+		padding-top: 50px;
 	}
 
 	i {
@@ -533,6 +626,10 @@ header {
 		padding: 10px;
 		text-align: center;
 		font-size: 28px;
+	}
+
+	.a {
+		padding: 10px;
 	}
 
 	a {
@@ -576,6 +673,7 @@ header {
 .contact-img {
 	display: flex;
 	align-items: end;
+	padding-top: 120px;
 	padding-left: 20px;
 
 	img {
@@ -596,7 +694,7 @@ header {
 }
 
 .about-me {
-	padding-top: 150px;
+	// padding-top: 150px;
 
 	h2 {
 		display: flex;
@@ -609,6 +707,7 @@ header {
 		align-items: center;
 		font-weight: normal;
 		padding: 15px;
+		text-align: justify;
 		width: 600px;
 		font-size: 30px;
 	}
@@ -617,6 +716,7 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding-bottom: 20px;
 	}
 
 	.about-me-box {
@@ -637,6 +737,26 @@ footer {
 }
 
 @media (max-width: 768px) {
+	.not-found-page{
+		.not-found-info {
+			h1 {
+				font-size: 20px;
+			}
+	
+			.box-btn {
+				padding: 50px;
+			}
+	
+			.not-found-btn {
+				font-size: 19px;
+				height: 50px;
+				width: 300px;
+				border: none;
+			}
+	
+		}	
+	}
+
 	header {
 		.header-img {
 			background-image: url("/dist/img/header-mini-img.png");
@@ -651,7 +771,7 @@ footer {
 			padding-bottom: 25px;
 		}
 
-		.header-btn {
+		a {
 			width: 220px;
 			height: 50px;
 		}
@@ -856,6 +976,14 @@ footer {
 		width: 400px;
 	}
 
+
+	.about-me .inscription {
+		font-size: 23px;
+		width: 330px;
+	}
+
+
+
 	footer {
 		padding: 40px 40px;
 		height: 150px;
@@ -899,72 +1027,6 @@ footer {
 		display: flex;
 		flex-direction: column;
 		font-size: 20px;
-	}
-
-	.desktop-nav {
-		display: none;
-	}
-
-	.burger-nav {
-		display: block;
-		position: fixed;
-	}
-
-	.burger-nav ul {
-		display: flex;
-		flex-direction: column;
-		justify-content: start;
-		padding-top: 50px;
-		position: absolute;
-		height: 100vh;
-		width: 350px;
-		left: -350px;
-		list-style: none;
-		background-color: rgb(255, 255, 255);
-		transition: transform 0.3s;
-		z-index: 10;
-	}
-
-	.burger-nav a {
-		display: block;
-		padding: 10px 30px;
-		color: #333;
-		text-decoration: none;
-	}
-
-	.burger-nav a:hover {
-		font-weight: bold;
-	}
-
-	.burger {
-		position: absolute;
-		top: 0;
-		right: 0;
-		padding: 30px 20px;
-		font-size: 36px;
-		background: none;
-		border: none;
-		cursor: pointer;
-		color: #fff;
-		transition: transform 0.3s;
-		z-index: 20;
-	}
-
-	.active {
-		transform: translateX(350px);
-	}
-
-	.hide {
-		display: none !important;
-	}
-
-	nav {
-		.nav-img {
-			margin-top: -10px;
-			margin-left: -30px;
-			height: 100px;
-			width: 200px;
-		}
 	}
 
 	.around-element {
@@ -1067,7 +1129,7 @@ footer {
 			width: 320px;
 			font-size: 23px;
 		}
-		
+
 		.first-a {
 			padding-top: 35px;
 		}
@@ -1076,26 +1138,11 @@ footer {
 			font-size: 23px;
 		}
 
-		.text-style, a {
+		.text-style,
+		a {
 			font-size: 23px;
 			width: 300px;
 		}
-	
-	}
-
-	.me-info, .about-me-box {
-		display: flex;
-		flex-direction: column;
-		// text-align: center;
-	}
-
-	.about-me .inscription {
-		font-size: 23px;
-		width: 330px;
-	}
-
-	.contact-two {
-		font-size: 23px;
 	}
 
 
@@ -1118,10 +1165,92 @@ footer {
 	}
 }
 
+.me-info,
+	.about-me-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .about-me .inscription {
+	// 	// font-size: 23px;
+	// 	width: 330px;
+	// }
+
+	.contact-two {
+		font-size: 36px;
+	}
+
+@media (max-width: 1270px) {
+	.desktop-nav {
+		display: none;
+	}
+
+	.burger-nav {
+		display: block;
+		position: fixed;
+	}
+
+	.burger-nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		padding-top: 50px;
+		position: absolute;
+		height: 100vh;
+		width: 350px;
+		left: -350px;
+		list-style: none;
+		background-color: rgb(255, 255, 255);
+		transition: transform 0.3s;
+		z-index: 10;
+	}
+
+	.burger-nav a {
+		display: block;
+		padding: 10px 30px;
+		color: #333;
+		text-decoration: none;
+	}
+
+	.burger-nav a:hover {
+		font-weight: bold;
+	}
+
+	.burger {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 30px 20px;
+		font-size: 36px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: #fff;
+		transition: transform 0.3s;
+		z-index: 20;
+	}
+
+	.active {
+		transform: translateX(350px);
+	}
+
+	.hide {
+		display: none !important;
+	}
+
+	nav {
+		.nav-img {
+			margin-top: -10px;
+			margin-left: -30px;
+			height: 100px;
+			width: 200px;
+		}
+	}
+}
+
 @media (max-width: 1400px) {
 	.buildings-box {
 		display: flex;
-		// flex-direction: column;
 	}
 	.img-box-ob {
 		display: flex;
