@@ -1,3 +1,7 @@
-# Ten projekt ma na celu zobrazowanie w jaki sposób piszę kod na stronę. 
+# This is my first project of website for customer. 
+## Project bazalgin.pl it's one page website with informations about the scouts camping place in Lgin, in Poland. 
 
-Link do finalnej wersji wrzuconej na hosting https://www.bazalgin.pl
+In this project I've traind my apitudes in work as a Front-end Developer, and the customer was so happy to the results on website.
+
+Website is Mobile Frienly and is full responsive for biggers and smallers screens. The technologies that I've used is: JavaScript, Gulp.js, Scss, HTML and generaly mimnification of code. 
+Link for the finished full version down below, I'm inviting to visit my project: https://www.bazalgin.pl 
