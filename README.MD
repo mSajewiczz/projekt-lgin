@@ -1,5 +1,5 @@
 # This is my first project of website for customer. 
-## Project bazalgin.pl it's one page website with informations about the scouts camping place in Lgin, in Poland. 
+## Project bazalgin.pl it's one page website with informations about the scouts camping base in Lgin, in Poland. 
 
 In this project I've traind my apitudes in work as a Front-end Developer, and the customer was so happy to the results on website.
 
